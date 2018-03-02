@@ -1,0 +1,116 @@
+.headmenu {  
+    width: 100%;
+    height: 60px;
+    background: #354a5d;
+    z-index: 100;
+    display: flex;
+    margin-top:-60px;
+    align-items: center;
+    flex-direction: row;
+    font-weight: normal;
+}
+.headmenu-top {
+    position: fixed;
+    top: 0;
+    margin-top:0;
+}
+.headmenu a:link,headmenu.a:visited{text-decoration:none}
+.headmenu .navigation {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex: auto;
+    padding:0;
+    list-style: none;
+}
+.headmenu .navigation .navigation-item {
+    float: left;
+    font:normal 16px/60px "microsoft yahei";   
+    flex: 1;
+}
+.headmenu .navigation .navigation-item .navigation-item-up {
+    text-align: center;
+    font-size:1em;
+    margin-bottom:0;
+    cursor: pointer;
+}
+.headmenu .navigation .navigation-item .navigation-item-up a{
+    color:#fff;
+    line-height: 60px;
+}
+
+.headmenu .navigation-item-down {
+    position: fixed;
+    top: 60px;
+    left:0px;
+    width:100%;
+    background:#496177;
+    display: none;
+}
+
+.navigation-item-down .navigation-down-inner {
+    position:relative;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-item-down .navigation-down-inner dl{
+    margin:15px 30px;;
+    float: left;
+    padding: 0;
+    list-style: none;
+    cursor: pointer;
+}
+.navigation-item-down .navigation-down-inner dl dt:only-child
+{
+    color:#fff;
+    border-bottom: none;
+}
+
+.navigation-item-down .navigation-down-inner dl dt {
+    font: normal 16px "microsoft yahei";
+    color: #7ca0be;
+    margin-bottom:5px;
+    border-bottom: 1px solid #7ca0be;
+}
+
+
+.navigation-item-down .navigation-down-inner dl dd {
+    font: normal 14px/30px "microsoft yahei";
+}
+
+.navigation-item-down .navigation-down-inner dl dd a {   
+    color: #fff;
+}
+
+.navigation-item-down .navigation-down-inner dl dd a:hover {
+    color: #60aff6;
+}
+
+.nav-up-selected {
+    background:#496177;
+}
+
+.headmenu_logo{font-size:18px;color:#fff}
+.headmenu_logo > img
+{
+    margin-left:15px;
+}
+
+.headmenu_func{text-align: right;margin-right: 15px}
+
+.headmenu_func .navbar-nav:hover,
+.headmenu_func .navbar-link:hover,
+.headmenu_func .nav-item:hover{color:initial;}
+
+
+.headmenu_func .navbar-nav,
+.headmenu_func .navbar-link,
+.headmenu_func .nav-item{display:inline;}
+
+.navbar .headmenu_func .nav-link:link{display:inline}
+
+
+.headmenu_func .nav-link:link{color:#fff;display: inline}
+
+.headmenu_func .show .dropdown-menu-right{display:block!important}
